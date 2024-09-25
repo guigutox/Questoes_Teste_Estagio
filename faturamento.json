@@ -1,0 +1,14 @@
+{
+    "faturamento_diario": [
+        {"dia": 1, "faturamento": 22174.17},
+        {"dia": 2, "faturamento": 24537.67},
+        {"dia": 3, "faturamento": 26139.61},
+        {"dia": 4, "faturamento": 0.0},
+        {"dia": 5, "faturamento": 0.0},
+        {"dia": 6, "faturamento": 26742.66},
+        {"dia": 7, "faturamento": 0.0},
+        {"dia": 8, "faturamento": 42889.23},
+        {"dia": 9, "faturamento": 46251.17},
+        {"dia": 10, "faturamento": 11191.47}
+    ]
+}
