@@ -22,6 +22,7 @@ async function carregarFaturamentos() {
     let maiorFaturamento = 0;
     let totalSomado = 0
     let diasUteis = 0;
+    let diasSuperioresMedia = 0;
     const faturamentos = await carregarFaturamentos();
     
     for(let i = 0; i < faturamentos.length; i++){
@@ -45,10 +46,17 @@ async function carregarFaturamentos() {
     }   
 
     let mediaFaturamento = totalSomado / diasUteis;
-    mediaFaturamento = parseFloat(mediaFaturamento.toFixed(2));
+
+    for(let i = 0; i < faturamentos.length; i++){
+        if(faturamentos[i] > mediaFaturamento){
+            diasSuperioresMedia++;
+        }
+    }
+    
 
     console.log("Menor faturamento:", menorFaturamento);
     console.log("Maior faturamento:", maiorFaturamento);
-    console.log("Media faturamento:", mediaFaturamento);
+    console.log("Media de faturamento:", mediaFaturamento.toFixed(2));
+    console.log("Numero de dias que o faturamento foi superior à media:", diasSuperioresMedia);
 
 })();
